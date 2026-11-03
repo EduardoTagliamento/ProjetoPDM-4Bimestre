@@ -1,6 +1,5 @@
 package com.exemplo.questpomodoro.ui
 
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -17,6 +16,8 @@ import com.exemplo.questpomodoro.service.BloqueioStatus
 import com.exemplo.questpomodoro.ui.batalha.BatalhaScreen
 import com.exemplo.questpomodoro.ui.bloqueio.AvisoBloqueio
 import com.exemplo.questpomodoro.ui.bloqueio.DialogoEscudo
+import com.exemplo.questpomodoro.ui.config.AppsLiberadosScreen
+import com.exemplo.questpomodoro.ui.config.ConfiguracoesScreen
 import com.exemplo.questpomodoro.ui.quest.QuestFormScreen
 import com.exemplo.questpomodoro.ui.taverna.TavernaScreen
 
@@ -71,7 +72,10 @@ fun Navegacao(destinoInicial: String?, pedidoDestino: Int = 0) {
             )
         }
         composable(Rotas.CONFIG) {
-            Text("Configurações")
+            ConfiguracoesScreen(aoVoltar = { nav.popBackStack() }, aoAbrirApps = { nav.navigate(Rotas.APPS) })
+        }
+        composable(Rotas.APPS) {
+            AppsLiberadosScreen(aoVoltar = { nav.popBackStack() })
         }
     }
 }

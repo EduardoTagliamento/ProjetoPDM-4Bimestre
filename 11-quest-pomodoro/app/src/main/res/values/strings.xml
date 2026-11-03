@@ -70,6 +70,25 @@
     <string name="escudo_ativar">Ativar bloqueio</string>
     <string name="escudo_sem_bloqueio">Batalhar sem bloqueio</string>
 
+    <!-- Configurações -->
+    <string name="config_duracoes">Durações</string>
+    <string name="config_foco">Batalha (foco)</string>
+    <string name="config_descanso">Pousada (descanso)</string>
+    <string name="config_proxima_batalha">Vale a partir da próxima batalha.</string>
+    <string name="config_apps_liberados">Apps liberados (%1$d)</string>
+    <string name="config_apps_dica">Escolha apps que podem ser usados durante o foco.</string>
+    <string name="config_lembrete">Lembrete diário</string>
+    <string name="config_lembrete_hora">Horário: %1$s</string>
+    <string name="config_permissoes">Permissões</string>
+    <string name="config_perm_acessibilidade">Escudo Anti-Distração (acessibilidade)</string>
+    <string name="config_perm_notificacoes">Notificações</string>
+    <string name="config_perm_ok">Ativo</string>
+    <string name="config_perm_off">Desativado</string>
+    <string name="config_abrir">Abrir</string>
+    <string name="apps_titulo">Apps liberados</string>
+    <string name="apps_sempre_liberados">Telefone e emergência sempre liberados.</string>
+    <string name="ok">OK</string>
+
     <!-- Vitória -->
     <string name="vitoria_titulo">Quest concluída!</string>
     <string name="vitoria_level_up">LEVEL UP! NV %1$d</string>
