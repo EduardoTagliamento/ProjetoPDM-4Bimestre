@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Quest Pomodoro</string>
+
+    <!-- Notificações -->
+    <string name="canal_continuo">Batalha em andamento</string>
+    <string name="canal_alertas">Alertas de fase</string>
+    <string name="canal_lembretes">Lembrete diário</string>
+    <string name="notif_preparando">Preparando a batalha…</string>
+    <string name="acao_retomar">Retomar</string>
+    <string name="acao_iniciar">Iniciar</string>
 </resources>
