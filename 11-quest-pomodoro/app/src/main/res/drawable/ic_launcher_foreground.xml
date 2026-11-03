@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Espada pixel original, em grade 108x108 (zona segura central). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#F4F4F4" android:pathData="M66,30h6v6h-6zM60,36h6v6h-6zM54,42h6v6h-6zM48,48h6v6h-6zM42,54h6v6h-6z"/>
+    <path android:fillColor="#94B0C2" android:pathData="M72,30h6v6h-6zM66,36h6v6h-6zM60,42h6v6h-6zM54,48h6v6h-6zM48,54h6v6h-6z"/>
+    <path android:fillColor="#FFCD75" android:pathData="M36,54h6v6h-6zM48,66h6v6h-6zM42,60h6v6h-6z"/>
+    <path android:fillColor="#B13E53" android:pathData="M36,66h6v6h-6zM30,72h6v6h-6z"/>
+</vector>
