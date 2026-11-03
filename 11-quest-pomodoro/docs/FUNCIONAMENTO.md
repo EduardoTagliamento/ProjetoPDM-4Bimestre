@@ -342,6 +342,5 @@ Para rodar: `./gradlew :app:testDebugUnitTest`.
 | `FOREGROUND_SERVICE` + `FOREGROUND_SERVICE_SPECIAL_USE` | `SessaoService` com `foregroundServiceType="specialUse"` (subtipo: "Timer de foco pomodoro com bloqueio de distrações"). |
 | `USE_EXACT_ALARM` e `SCHEDULE_EXACT_ALARM` (`maxSdkVersion=32`) | Disparar o fim da fase e o lembrete na hora certa, mesmo em Doze. |
 | `RECEIVE_BOOT_COMPLETED` | `BootReceiver` reagenda a sessão e o lembrete depois de reiniciar o aparelho. |
-| `WAKE_LOCK` | Declarada no Manifest. O código não cria wake locks diretamente: os alarmes usam `RTC_WAKEUP`. |
 | `BIND_ACCESSIBILITY_SERVICE` | Protege o `BloqueioAccessibilityService`, para que só o sistema possa se ligar a ele. O usuário precisa ativá-lo nas configurações. |
 | `<queries>` `MAIN/HOME` e `MAIN/LAUNCHER` | Android 11+: identificar os launchers (sempre liberados) e listar os apps na tela de Apps liberados. |
