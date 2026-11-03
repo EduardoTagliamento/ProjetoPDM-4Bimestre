@@ -19,6 +19,7 @@ import kotlinx.coroutines.launch
 /** Mantém a notificação contínua da sessão enquanto ela existir. */
 class SessaoService : LifecycleService() {
     private var iniciado = false
+    private var ultima: android.app.Notification? = null
 
     @OptIn(ExperimentalCoroutinesApi::class)
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -28,7 +29,7 @@ class SessaoService : LifecycleService() {
         } else {
             0
         }
-        ServiceCompat.startForeground(this, IdsNotificacao.CONTINUA, Notificador.preparando(this), tipo)
+        ServiceCompat.startForeground(this, IdsNotificacao.CONTINUA, ultima ?: Notificador.preparando(this), tipo)
         if (!iniciado) {
             iniciado = true
             val c = container
@@ -44,6 +45,7 @@ class SessaoService : LifecycleService() {
                         } else {
                             val (s, titulo) = par
                             val n = Notificador.continua(this@SessaoService, conteudoContinuo(s, titulo, c.relogio.agora()))
+                            ultima = n
                             Notificador.postar(this@SessaoService, IdsNotificacao.CONTINUA, n)
                         }
                     }
