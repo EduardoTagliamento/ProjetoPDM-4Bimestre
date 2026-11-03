@@ -74,7 +74,7 @@
     <string name="config_duracoes">Durações</string>
     <string name="config_foco">Batalha (foco)</string>
     <string name="config_descanso">Pousada (descanso)</string>
-    <string name="config_proxima_batalha">Vale a partir da próxima batalha.</string>
+    <string name="config_proxima_batalha">Vale para a próxima quest que você iniciar (a sessão em andamento não muda).</string>
     <string name="config_apps_liberados">Apps liberados (%1$d)</string>
     <string name="config_apps_dica">Escolha apps que podem ser usados durante o foco.</string>
     <string name="config_lembrete">Lembrete diário</string>

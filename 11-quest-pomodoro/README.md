@@ -61,7 +61,7 @@ app/src/main/java/com/exemplo/questpomodoro/
 ├── domain/        SessaoMaquina (estados FOCO/PAUSADO/DESCANSO/AGUARDANDO), QuestRegras, Heroi, RegrasBloqueio, Lembrete
 ├── data/          Room (quests, batalhas, sessão ativa), DataStore (configurações, XP), repositórios
 ├── service/       Foreground service, alarme de fase, receivers, serviço de acessibilidade
-├── notification/  Canais, conteúdo das notificações, lembrete (WorkManager)
+├── notification/  Canais, conteúdo das notificações, lembrete diário (AlarmManager)
 └── ui/            Tema RPG, componentes pixel, telas (Taverna, Quest, Batalha, Configurações, Bloqueio)
 ```
 
