@@ -1,11 +1,13 @@
 package com.exemplo.questpomodoro.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -80,5 +82,8 @@ private val FormasRetas = Shapes(
 
 @Composable
 fun TemaRpg(content: @Composable () -> Unit) {
-    MaterialTheme(colorScheme = CoresRpg, typography = TipografiaRpg, shapes = FormasRetas, content = content)
+    MaterialTheme(colorScheme = CoresRpg, typography = TipografiaRpg, shapes = FormasRetas) {
+        // Telas sem Scaffold/Surface herdariam preto; o padrão do app é texto claro.
+        CompositionLocalProvider(LocalContentColor provides Cores.Borda, content = content)
+    }
 }

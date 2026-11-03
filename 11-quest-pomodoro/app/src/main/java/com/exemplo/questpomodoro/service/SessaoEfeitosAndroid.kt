@@ -3,9 +3,11 @@ package com.exemplo.questpomodoro.service
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import com.exemplo.questpomodoro.data.repository.Alerta
 import com.exemplo.questpomodoro.data.repository.SessaoEfeitos
+import com.exemplo.questpomodoro.domain.model.Fase
 import com.exemplo.questpomodoro.domain.model.Sessao
 import com.exemplo.questpomodoro.notification.IdsNotificacao
 import com.exemplo.questpomodoro.notification.Notificador
@@ -18,6 +20,8 @@ class SessaoEfeitosAndroid(private val context: Context) : SessaoEfeitos {
         val fim = sessao?.faseTerminaEm
         if (fim != null) alarme.agendar(fim) else alarme.cancelar()
         if (sessao != null) iniciarServico()
+        // "De volta à batalha!" perde o sentido quando a batalha já começou.
+        if (sessao?.fase == Fase.FOCO) NotificationManagerCompat.from(context).cancel(IdsNotificacao.ALERTA)
     }
 
     override fun alertar(alerta: Alerta) {

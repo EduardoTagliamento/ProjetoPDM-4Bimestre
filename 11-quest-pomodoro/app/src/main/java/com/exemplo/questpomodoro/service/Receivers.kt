@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import com.exemplo.questpomodoro.container
 import com.exemplo.questpomodoro.notification.AcaoNotificacao
+import com.exemplo.questpomodoro.notification.LembreteAgendador
 import kotlinx.coroutines.launch
 
 /** Roda [bloco] fora da main thread mantendo o receiver vivo até terminar. */
@@ -32,8 +33,8 @@ class BootReceiver : BroadcastReceiver() {
         if (intent.action != Intent.ACTION_BOOT_COMPLETED && intent.action != Intent.ACTION_MY_PACKAGE_REPLACED) return
         assincrono(context) {
             val c = context.container
-            c.sessaoRepository.sincronizar()
-            c.db.sessaoDao().buscar()?.let { c.efeitos.aoMudarSessao(it) }
+            c.restaurarSessao()
+            LembreteAgendador.reagendar(context, c.config.atual())
         }
     }
 }

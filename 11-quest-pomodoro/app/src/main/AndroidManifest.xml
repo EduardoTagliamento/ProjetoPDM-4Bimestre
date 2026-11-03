@@ -75,6 +75,9 @@
             android:name=".service.SessaoAcaoReceiver"
             android:exported="false" />
         <receiver
+            android:name=".notification.LembreteReceiver"
+            android:exported="false" />
+        <receiver
             android:name=".service.BootReceiver"
             android:exported="true">
             <intent-filter>

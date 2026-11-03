@@ -35,6 +35,12 @@ class AppContainer(context: Context) {
     val sessaoRepository = SessaoRepository(
         db.questDao(), db.batalhaDao(), db.sessaoDao(), heroi, config, transacao, relogio, efeitos,
     )
+
+    /** Aplica fases expiradas e reagenda alarme + serviço (após boot, force-stop ou morte do processo). */
+    suspend fun restaurarSessao() {
+        sessaoRepository.sincronizar()
+        db.sessaoDao().buscar()?.let { efeitos.aoMudarSessao(it) }
+    }
 }
 
 val Context.container: AppContainer

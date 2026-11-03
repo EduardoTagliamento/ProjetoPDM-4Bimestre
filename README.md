@@ -842,6 +842,16 @@ Marque os projetos à medida que forem concluídos.
 
 ---
 
+# ⚔️ Projeto extra — 11 Quest Pomodoro
+
+Junção dos Projetos 05 e 06: tarefas com N rodadas pomodoro, bloqueio de apps durante o foco (Serviço de Acessibilidade), notificações e tema RPG pixel art.
+
+**📂 Pasta:** [`11-quest-pomodoro/`](11-quest-pomodoro/)
+
+- [x] Projeto 11 — Quest Pomodoro
+
+---
+
 # 🤝 Contribuições
 
 Contribuições são bem-vindas!
