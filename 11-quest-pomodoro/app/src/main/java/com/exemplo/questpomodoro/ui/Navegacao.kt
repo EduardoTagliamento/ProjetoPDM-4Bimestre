@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.exemplo.questpomodoro.ui.quest.QuestFormScreen
 import com.exemplo.questpomodoro.ui.taverna.TavernaScreen
 
 object Rotas {
@@ -38,8 +39,11 @@ fun Navegacao(destinoInicial: String?, pedidoDestino: Int = 0) {
                 aoAbrirConfig = { nav.navigate(Rotas.CONFIG) },
             )
         }
-        composable(Rotas.QUEST, arguments = listOf(navArgument("id") { type = NavType.LongType })) {
-            Text("Quest")
+        composable(Rotas.QUEST, arguments = listOf(navArgument("id") { type = NavType.LongType })) { entrada ->
+            QuestFormScreen(
+                questId = entrada.arguments?.getLong("id") ?: 0L,
+                aoVoltar = { nav.popBackStack() },
+            )
         }
         composable(Rotas.BATALHA) {
             Text("Batalha")

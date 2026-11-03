@@ -24,6 +24,26 @@
     <string name="quest_concluida_rotulo">Quest concluída ✔</string>
     <string name="config_titulo">Configurações</string>
 
+    <!-- Formulário de quest -->
+    <string name="form_titulo_nova">Nova Quest</string>
+    <string name="form_titulo_editar">Editar Quest</string>
+    <string name="form_campo_titulo">Nome da quest</string>
+    <string name="form_campo_descricao">Descrição (opcional)</string>
+    <string name="form_raridade">Raridade (prioridade)</string>
+    <string name="form_batalhas">Batalhas (rodadas pomodoro)</string>
+    <string name="form_salvar">Salvar</string>
+    <string name="form_excluir">Excluir</string>
+    <string name="form_confirmar_excluir">Excluir esta quest? O progresso será perdido.</string>
+    <string name="form_aviso_concluida">Quest concluída — só é possível excluir.</string>
+    <string name="form_aviso_batalha">Em batalha — termine ou desista para editar.</string>
+    <string name="form_recusada_batalha">Em batalha — não dá para alterar esta quest agora.</string>
+    <string name="erro_titulo_vazio">Dê um nome à sua quest.</string>
+    <string name="erro_titulo_longo">Máximo de 60 caracteres.</string>
+    <string name="erro_rodadas_intervalo">Entre 1 e 20 batalhas.</string>
+    <string name="erro_rodadas_abaixo">Já foram vencidas %1$d batalhas.</string>
+    <string name="voltar">Voltar</string>
+    <string name="cancelar">Cancelar</string>
+
     <!-- Vitória -->
     <string name="vitoria_titulo">Quest concluída!</string>
     <string name="vitoria_level_up">LEVEL UP! NV %1$d</string>
