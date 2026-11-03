@@ -8,4 +8,24 @@
     <string name="notif_preparando">Preparando a batalha…</string>
     <string name="acao_retomar">Retomar</string>
     <string name="acao_iniciar">Iniciar</string>
+
+    <!-- Taverna -->
+    <string name="taverna_titulo">Taverna</string>
+    <string name="taverna_nova_quest">+ Nova Quest</string>
+    <string name="taverna_em_batalha">⚔ Batalha em andamento — toque para voltar</string>
+    <string name="taverna_vazia">Nenhuma quest por aqui. Crie a primeira e comece sua jornada!</string>
+    <string name="filtro_todas">Todas</string>
+    <string name="filtro_pendentes">Pendentes</string>
+    <string name="filtro_concluidas">Concluídas</string>
+    <string name="ordem_rotulo">Ordem: %1$s</string>
+    <string name="ordem_prioridade">Raridade</string>
+    <string name="ordem_data">Mais recentes</string>
+    <string name="quest_progresso">%1$d/%2$d batalhas vencidas</string>
+    <string name="quest_concluida_rotulo">Quest concluída ✔</string>
+    <string name="config_titulo">Configurações</string>
+
+    <!-- Vitória -->
+    <string name="vitoria_titulo">Quest concluída!</string>
+    <string name="vitoria_level_up">LEVEL UP! NV %1$d</string>
+    <string name="vitoria_continuar">Continuar</string>
 </resources>
