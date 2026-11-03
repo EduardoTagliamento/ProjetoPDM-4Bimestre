@@ -44,6 +44,20 @@
     <string name="voltar">Voltar</string>
     <string name="cancelar">Cancelar</string>
 
+    <!-- Batalha / Pousada -->
+    <string name="batalha_n">Batalha %1$d/%2$d</string>
+    <string name="batalha_pausar">Pausar</string>
+    <string name="batalha_retomar">Retomar</string>
+    <string name="batalha_pausado">⏸ Pausado — apps liberados</string>
+    <string name="batalha_desistir">Desistir</string>
+    <string name="batalha_sair_quest">Sair da quest</string>
+    <string name="pousada_titulo">Pousada</string>
+    <string name="pousada_proxima">Próxima: Batalha %1$d/%2$d</string>
+    <string name="pousada_apps_liberados">Descanse! Os apps estão liberados.</string>
+    <string name="pousada_pular">Pular descanso</string>
+    <string name="aguardando_titulo">A party descansou. Pronto para a próxima?</string>
+    <string name="aguardando_iniciar">Iniciar Batalha %1$d/%2$d</string>
+
     <!-- Vitória -->
     <string name="vitoria_titulo">Quest concluída!</string>
     <string name="vitoria_level_up">LEVEL UP! NV %1$d</string>

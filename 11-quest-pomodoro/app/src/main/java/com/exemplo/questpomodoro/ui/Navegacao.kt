@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.exemplo.questpomodoro.ui.batalha.BatalhaScreen
 import com.exemplo.questpomodoro.ui.quest.QuestFormScreen
 import com.exemplo.questpomodoro.ui.taverna.TavernaScreen
 
@@ -46,7 +47,7 @@ fun Navegacao(destinoInicial: String?, pedidoDestino: Int = 0) {
             )
         }
         composable(Rotas.BATALHA) {
-            Text("Batalha")
+            BatalhaScreen(aoVoltarTaverna = { if (!nav.popBackStack(Rotas.TAVERNA, false)) nav.navigate(Rotas.TAVERNA) })
         }
         composable(Rotas.CONFIG) {
             Text("Configurações")
