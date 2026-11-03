@@ -58,6 +58,18 @@
     <string name="aguardando_titulo">A party descansou. Pronto para a próxima?</string>
     <string name="aguardando_iniciar">Iniciar Batalha %1$d/%2$d</string>
 
+    <!-- Bloqueio -->
+    <string name="acessibilidade_nome">Escudo Anti-Distração (Quest Pomodoro)</string>
+    <string name="acessibilidade_descricao">Durante uma batalha (foco), o Quest Pomodoro observa apenas qual app foi aberto e mostra uma tela de bloqueio se ele não estiver liberado. Nenhum conteúdo de tela, texto ou dado pessoal é lido ou armazenado.</string>
+    <string name="bloqueio_titulo">Você não pode fugir da batalha!</string>
+    <string name="bloqueio_restante">Faltam %1$s</string>
+    <string name="bloqueio_voltar">Voltar à batalha</string>
+    <string name="bloqueio_aviso_inativo">⚠ Bloqueio desativado — outros apps estão liberados.</string>
+    <string name="escudo_titulo">Ative o Escudo Anti-Distração</string>
+    <string name="escudo_texto">Para bloquear os outros apps durante o foco, ative o \"Escudo Anti-Distração (Quest Pomodoro)\" nas configurações de Acessibilidade. Telefone e emergência continuam liberados.</string>
+    <string name="escudo_ativar">Ativar bloqueio</string>
+    <string name="escudo_sem_bloqueio">Batalhar sem bloqueio</string>
+
     <!-- Vitória -->
     <string name="vitoria_titulo">Quest concluída!</string>
     <string name="vitoria_level_up">LEVEL UP! NV %1$d</string>
