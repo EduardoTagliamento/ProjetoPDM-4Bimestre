@@ -3,7 +3,7 @@
 > Junção dos Projetos 05 (Pomodoro) e 06 (Gerenciador de Tarefas) do Android Dev Lab,
 > com tema RPG pixel art, bloqueio de apps e notificações.
 
-**Pasta:** `11-quest-pomodoro/` *(decisão do Claude)*
+**Pasta:** `05-06-quest-pomodoro/` *(decisão do Claude)*
 **Data:** 2026-11-02
 
 ---

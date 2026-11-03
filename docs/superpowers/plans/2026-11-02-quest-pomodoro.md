@@ -12,9 +12,9 @@
 
 ## Global Constraints
 
-- Projeto em `11-quest-pomodoro/` na raiz do repositório; pacote `com.exemplo.questpomodoro`.
+- Projeto em `05-06-quest-pomodoro/` na raiz do repositório; pacote `com.exemplo.questpomodoro`.
 - `minSdk 26`, `compileSdk 36`, `targetSdk 36` (a plataforma `android-36` está instalada).
-- Todos os comandos Gradle rodam no Git Bash, de dentro de `11-quest-pomodoro/`, com `export JAVA_HOME="/c/Program Files/Android/Android Studio/jbr"` (JDK 21; o JDK 25 do PATH não serve).
+- Todos os comandos Gradle rodam no Git Bash, de dentro de `05-06-quest-pomodoro/`, com `export JAVA_HOME="/c/Program Files/Android/Android Studio/jbr"` (JDK 21; o JDK 25 do PATH não serve).
 - `local.properties` com `sdk.dir=C\:\\Users\\eduar\\AppData\\Local\\Android\\Sdk`, fora do git.
 - Branch de trabalho: `feat/quest-pomodoro`. Nunca commitar direto na `main`.
 - Textos visíveis em **pt-BR**, em `res/values/strings.xml`, salvo strings montadas por funções de domínio testadas (copy fixa abaixo).
@@ -37,7 +37,7 @@
 
 ## File Structure
 
-Caminhos relativos a `11-quest-pomodoro/`. `PKG` = `app/src/main/java/com/exemplo/questpomodoro`, `TST` = `app/src/test/java/com/exemplo/questpomodoro`.
+Caminhos relativos a `05-06-quest-pomodoro/`. `PKG` = `app/src/main/java/com/exemplo/questpomodoro`, `TST` = `app/src/test/java/com/exemplo/questpomodoro`.
 
 | Arquivo | Responsabilidade |
 |---|---|
@@ -63,8 +63,8 @@ Caminhos relativos a `11-quest-pomodoro/`. `PKG` = `app/src/main/java/com/exempl
 ### Task 1: Esqueleto do projeto que compila
 
 **Files:**
-- Create: `11-quest-pomodoro/{settings.gradle.kts,build.gradle.kts,gradle.properties,gradle/libs.versions.toml,.gitignore,local.properties}`
-- Create: `11-quest-pomodoro/app/{build.gradle.kts,proguard-rules.pro}`, `app/src/main/AndroidManifest.xml`, `app/src/main/res/values/{strings.xml,themes.xml}`
+- Create: `05-06-quest-pomodoro/{settings.gradle.kts,build.gradle.kts,gradle.properties,gradle/libs.versions.toml,.gitignore,local.properties}`
+- Create: `05-06-quest-pomodoro/app/{build.gradle.kts,proguard-rules.pro}`, `app/src/main/AndroidManifest.xml`, `app/src/main/res/values/{strings.xml,themes.xml}`
 - Create: `PKG/QuestApp.kt`, `PKG/MainActivity.kt`
 - Test: `TST/SanidadeTest.kt`
 
@@ -83,7 +83,7 @@ cd "/f/Area de Trabalho/bruno/ProjetoPDM-4Bimestre" && git checkout -b feat/ques
 - [ ] **Step 3: Gerar o wrapper com o Gradle em cache**
 
 ```bash
-cd 11-quest-pomodoro && export JAVA_HOME="/c/Program Files/Android/Android Studio/jbr"
+cd 05-06-quest-pomodoro && export JAVA_HOME="/c/Program Files/Android/Android Studio/jbr"
 "$(ls -d ~/.gradle/wrapper/dists/gradle-8.14.3-bin/*/gradle-8.14.3)/bin/gradle" wrapper --gradle-version 8.14.3
 ```
 Expected: `BUILD SUCCESSFUL`, com `gradlew` e `gradle/wrapper/` criados.
@@ -98,7 +98,7 @@ Expected: `BUILD SUCCESSFUL`.
 - [ ] **Step 6: Commit**
 
 ```bash
-git add 11-quest-pomodoro && git commit -m "chore(quest-pomodoro): esqueleto do projeto Android"
+git add 05-06-quest-pomodoro && git commit -m "chore(quest-pomodoro): esqueleto do projeto Android"
 ```
 
 ---
@@ -713,8 +713,8 @@ class ConfiguracoesViewModel(config: ConfiguracoesStore, aoMudarLembrete: (Confi
 ### Task 13: Documentação e verificação manual
 
 **Files:**
-- Create: `11-quest-pomodoro/README.md`, `11-quest-pomodoro/screenshots/*.png`
-- Modify: `README.md` da raiz (seção "Projeto extra — 11 Quest Pomodoro" com um link para a pasta)
+- Create: `05-06-quest-pomodoro/README.md`, `05-06-quest-pomodoro/screenshots/*.png`
+- Modify: `README.md` da raiz (seção "Projetos 05 + 06 — Quest Pomodoro" com um link para a pasta)
 
 - [ ] **Step 1: Escrever o README da pasta**: o que o app faz, como abrir e rodar (Android Studio ou `./gradlew installDebug`), as permissões e o motivo de cada uma, como ativar a acessibilidade e os créditos (Press Start 2P/OFL, Sweetie 16/CC0).
 - [ ] **Step 2: Fazer o roteiro manual em emulador API 36** (`system-images/android-36.1`), com foco e descanso de 1 min:

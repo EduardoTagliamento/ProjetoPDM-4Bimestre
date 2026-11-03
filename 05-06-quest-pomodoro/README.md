@@ -1,6 +1,6 @@
 # ⚔️ Quest Pomodoro
 
-**Projeto extra do Android Dev Lab**: a junção dos Projetos 05 (Pomodoro) e 06 (Gerenciador de Tarefas), com tema **RPG pixel art**, **bloqueio de apps** durante o foco e **notificações**.
+**Projetos 05 + 06 do Android Dev Lab**: o Projeto 05 (Temporizador Pomodoro) e o Projeto 06 (Gerenciador de Tarefas) entregues juntos, em um único app, com tema **RPG pixel art**, **bloqueio de apps** durante o foco e **notificações**.
 
 Você cadastra uma **Quest** (tarefa) e diz quantas **batalhas** (rodadas pomodoro) ela precisa.
 Exemplo: *Estudar Física — 5 batalhas* = 5 × 25 min de foco, com 5 min de **Pousada** (descanso) entre elas.
@@ -20,7 +20,7 @@ Cada batalha vencida dá **+10 XP**, concluir a quest dá **+50 XP**, e o herói
 
 ## Como executar
 
-1. Abra a pasta `11-quest-pomodoro/` no **Android Studio** (Ladybug ou mais recente) e aguarde o Gradle sincronizar.
+1. Abra a pasta `05-06-quest-pomodoro/` no **Android Studio** (Ladybug ou mais recente) e aguarde o Gradle sincronizar.
 2. Escolha um emulador ou dispositivo com Android 8.0+ (API 26+) e clique em **Run ▶**.
 
 Pela linha de comando (Git Bash), com o JDK 21 do Android Studio:

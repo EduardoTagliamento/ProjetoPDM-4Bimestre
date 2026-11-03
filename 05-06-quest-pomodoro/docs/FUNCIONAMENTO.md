@@ -1,6 +1,6 @@
 # Quest Pomodoro: como o app funciona
 
-Documento de apoio à avaliação do trabalho de PDM. Ele descreve o que **está implementado** no código
+Documento de apoio à avaliação do trabalho de PDM: os **Projetos 05 (Pomodoro) e 06 (Gerenciador de Tarefas)** do Android Dev Lab, entregues juntos em um único app. Ele descreve o que **está implementado** no código
 (`app/src/main/java/com/exemplo/questpomodoro/`). Onde o código e a spec divergem, vale o código.
 
 ---

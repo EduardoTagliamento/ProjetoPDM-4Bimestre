@@ -831,8 +831,8 @@ Acompanhe a implementação dos aplicativos:
 - [ ] Projeto 02 — Calculadora
 - [ ] Projeto 03 — Conversor de Temperatura
 - [ ] Projeto 04 — Quiz Interativo
-- [ ] Projeto 05 — Pomodoro
-- [ ] Projeto 06 — Lista de Tarefas
+- [x] Projeto 05 — Pomodoro *(entregue junto com o 06 no Quest Pomodoro)*
+- [x] Projeto 06 — Lista de Tarefas *(entregue junto com o 05 no Quest Pomodoro)*
 - [ ] Projeto 07 — Controle de Estoque
 - [ ] Projeto 08 — Aplicativo de Clima
 - [ ] Projeto 09 — Controle Financeiro
@@ -842,13 +842,11 @@ Marque os projetos à medida que forem concluídos.
 
 ---
 
-# ⚔️ Projeto extra — 11 Quest Pomodoro
+# ⚔️ Projetos 05 + 06 — Quest Pomodoro
 
-Junção dos Projetos 05 e 06: tarefas com N rodadas pomodoro, bloqueio de apps durante o foco (Serviço de Acessibilidade), notificações e tema RPG pixel art.
+Os Projetos 05 (Temporizador Pomodoro) e 06 (Gerenciador de Tarefas) foram desenvolvidos **juntos, em um único app**: tarefas com N rodadas pomodoro, bloqueio de apps durante o foco (Serviço de Acessibilidade), notificações e tema RPG pixel art.
 
-**📂 Pasta:** [`11-quest-pomodoro/`](11-quest-pomodoro/)
-
-- [x] Projeto 11 — Quest Pomodoro
+**📂 Pasta:** [`05-06-quest-pomodoro/`](05-06-quest-pomodoro/) (substitui as pastas `05-pomodoro/` e `06-lista-tarefas/`)
 
 ---
 
